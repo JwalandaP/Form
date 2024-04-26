@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Forms</title>
+    <link href="forms.css" rel ="stylesheet">
+  </head>
+  <body>
+    <p>
+      <center><h1>SURVEY FORM</h1></center>
+    </p>
+    <form>
+      <h3>
+        <p>
+          <!--make this line blur with css-->
+          Please fill out the below form to help the Nepalese transportation system make
+          better decisions.Your 5 minutes on this form can help us make important decisions to make necessary changes to the existing transportatio system in Nepal for the good of Nepalese commuters.
+        </p>
+        <br />
+      </h3>
+      <p>
+        <label for="first_name">FIRST NAME</label>
+        <input id="first_name" name="first_name" r />
+
+        <label for="last_name">LAST NAME:</label>
+        <input id="last_name" name="last_name" required />
+      </p>
+      <p>
+        <label for="date_of_birthx">DOB</label>
+        <input id="date_of_birth" name="date_of_birth" type="date" />
+
+        <label for="phone_number">PHONE NUMBER</label>
+        <input id="phone_number" name="phone_number" type="number" min="0" />
+      </p>
+      <p>
+        <label> GENDER: </label>
+        <input id="male" name="gender" type="radio" />
+        <label for="male">Male</label>
+        <input id="female" name="gender" type="radio" />
+        <label for="female">Female</label>
+        <input id="others" name="gender" type="radio" />
+        <label for="others">Others</label>
+      </p>
+
+      <p>
+        <label for="email">EMAIL</label>
+        <input id="email" name="email" type="email" required />
+
+        <label for="page">Any Relevant Page to take inspiration from:</label>
+        <input id="page" nem="page" type="url" size="50" />
+      </p>
+      <br />
+      <br />
+      <hr style="width: 50%" />
+      <p>
+       <h3>
+        Please provide suitable suggestions to make the Nepalese transporation
+        make exceptional changes as to be seen in next 2 years for your
+        better experience.
+      </h3> 
+      </p>
+      <select>
+        <option value ="">--Select your favourite mode of transporation--</option>
+        <option value="car">Car</option>
+        <option value="public_bus">Public Bus</option>
+        <option value="micro_bus">Micro Bus</option>
+        <option value="mini_bus">Mini Bus</option>
+        <option value="jeep">Jeep</option>
+    </select>
+      <p>
+        <p id="Options">Please choose any three colours to represent the nepalese vehicles:</p>
+        <label for="vehicle_color1">COLOR 1: </label>
+        <input id ="vehicle_color1" name="vehicle_color1" type ="color">
+        <label for="vehicle_color2">COLOR 2: </label>
+        <input id ="vehicle_color2" name="vehicle_color2" type ="color">
+        <label for="vehicle_color3">COLOR 3: </label>
+        <input id ="vehicle_color3" name="vehicle_color3" type ="color">
+      </p>
+      <br />
+      <p>
+        <p id="Options">How should pasengers pay for travel fees:</p>
+        <label for="electrical">Electrical System</label>
+        <input id="electrical" name="payment_type" type="checkbox">
+        <label for="co-driver">With the help of a co-driver/ vehicle helper</label>
+        <input id="co-driver" name="payment_type" type="checkbox">
+      </p>
+      <br />
+      <p>
+      <p id ="Options">Please upload any document files if you have any interesting ideas to share with us:</p>  
+      <p>
+        <label for="document">Choose suitable file/files:</label>
+        <input id="document" name="document" type="file" multiple>
+      </p>
+      </p>
+      <br />
+      <hr style="width: 50%" />
+      <h3> Please provide 1 line to 5 line answers to the below listed 2 questions.</h3>
+      <p>
+        <label for="problems">What are the things that you do not find correct in the current Nepalese transportation system?</label>
+        <textarea id="problems" cols="100" rows="8"></textarea>
+      </p>
+      <p>
+        <label for="suggestion">What are the changes you would like to see in the upcomming Nepalese transportation system</label>
+        <textarea id="suggestion" cols="100" rows="8"></textarea>
+      </p>
+      <p>
+        <label for="form_time">Please input the time of the form filled</label>
+        <input id="form_time" name="form_time" type="time">
+      </p>
+      <button type ="submit">SUBMIT</button>
+    </form>
+  </body>
+</html>
